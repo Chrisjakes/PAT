@@ -62,7 +62,7 @@
       "$$ClassName" : "TCastleViewport",
       "Background" : "Background1",
       "Camera" : "Camera1",
-      "Height" : 2.7000000000000000E+002,
+      "Height" : 2.9000000000000000E+002,
       "Items" : {
         "$$ClassName" : "TCastleRootTransform",
         "PhysicsProperties" : {
@@ -74,12 +74,6 @@
             "$$ClassName" : "TCastleLayerNames"
           }
         },
-        "$NonVisualComponents" : [
-          {
-            "$$ClassName" : "TCastleFog",
-            "Name" : "Fog1"
-          }
-        ],
         "$Children" : [
           {
             "$$ClassName" : "TCastleCamera",
@@ -92,8 +86,9 @@
             },
             "TranslationPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
+              "X" : 2.7213046550750732E+000,
               "Y" : 2.0000000000000000E+000,
-              "Z" : 4.0000000000000000E+000
+              "Z" : 6.4917883872985840E+000
             }
           },
           {
@@ -101,9 +96,9 @@
             "Name" : "PointLight1",
             "TranslationPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
-              "X" : 4.0000000000000000E+000,
-              "Y" : 3.0000000000000000E+000,
-              "Z" : 1.0000000000000000E+000
+              "X" : 1.3883006572723389E+000,
+              "Y" : 3.4735422134399414E+000,
+              "Z" : 8.9570605754852295E-001
             }
           },
           {
@@ -117,6 +112,29 @@
               "X" : 1.0000000000000000E+001,
               "Y" : 1.0000000000000000E+001
             }
+          },
+          {
+            "$$ClassName" : "TCastleScene",
+            "AutoAnimation" : "wheels_turning",
+            "ExposeTransforms" : [
+            ],
+            "Name" : "Scene1",
+            "ProcessEvents" : true,
+            "RenderOptions" : {
+              "$$ClassName" : "TCastleScene.TSceneRenderOptions"
+            },
+            "ScalePersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : 4.9637946486473083E-001,
+              "Y" : 3.3759427070617676E-001,
+              "Z" : 3.7326902151107788E-001
+            },
+            "TranslationPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "Y" : 4.9300193786621094E-002,
+              "Z" : 2.5693371295928955E+000
+            },
+            "Url" : "castle-data:/car.gltf"
           }
         ]
       },
@@ -130,7 +148,37 @@
       "$NonVisualComponents" : [
         {
           "$$ClassName" : "TCastleBackground",
-          "Name" : "Background1"
+          "GroundBottomColorPersistent" : {
+            "$$ClassName" : "TCastleColorRGBPersistent",
+            "Blue" : 9.3725490570068359E-001,
+            "Green" : 9.5294117927551270E-001,
+            "Red" : 9.6078431606292725E-001
+          },
+          "GroundEquatorColorPersistent" : {
+            "$$ClassName" : "TCastleColorRGBPersistent",
+            "Blue" : 9.3725490570068359E-001,
+            "Green" : 9.5294117927551270E-001,
+            "Red" : 9.6078431606292725E-001
+          },
+          "Name" : "Background1",
+          "SkyEquatorColorPersistent" : {
+            "$$ClassName" : "TCastleColorRGBPersistent",
+            "Blue" : 9.3725490570068359E-001,
+            "Green" : 9.5294117927551270E-001,
+            "Red" : 9.6078431606292725E-001
+          },
+          "SkyTopColorPersistent" : {
+            "$$ClassName" : "TCastleColorRGBPersistent",
+            "Blue" : 9.3725490570068359E-001,
+            "Green" : 9.5294117927551270E-001,
+            "Red" : 9.6078431606292725E-001
+          }
+        }
+      ],
+      "$Children" : [
+        {
+          "$$ClassName" : "TCastleExamineNavigation",
+          "Name" : "ExamineNavigation1"
         }
       ],
       "InternalDesignCamera" : {
@@ -148,8 +196,8 @@
         },
         "TranslationPersistent" : {
           "$$ClassName" : "TCastleVector3Persistent",
-          "Y" : 2.0000000000000000E+000,
-          "Z" : 4.0000000000000000E+000
+          "Y" : 1.4755504131317139E+000,
+          "Z" : 1.8004972457885742E+001
         }
       },
       "InternalDesignNavigations[dnFly]" : {
