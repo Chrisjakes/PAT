@@ -18,7 +18,23 @@
         "X" : 5.7000000000000000E+002,
         "Y" : 1.0000000000000000E+001
       },
-      "Width" : 6.4000000000000000E+002
+      "Width" : 6.3000000000000000E+002
+    },
+    {
+      "$$ClassName" : "TCastleImageControl",
+      "Content" : {
+        "$$ClassName" : "TCastleImagePersistent",
+        "Url" : "castle-data:/Images/AchievementsPage.png"
+      },
+      "Height" : 7.8000000000000000E+002,
+      "Name" : "imgAchievementsIcons",
+      "Stretch" : true,
+      "TranslationPersistent" : {
+        "$$ClassName" : "TCastleVector2Persistent",
+        "X" : 5.8000000000000000E+002,
+        "Y" : 1.4000000000000000E+002
+      },
+      "Width" : 6.2000000000000000E+002
     },
     {
       "$$ClassName" : "TCastleLabel",
@@ -54,8 +70,8 @@
       "Stretch" : true,
       "TranslationPersistent" : {
         "$$ClassName" : "TCastleVector2Persistent",
-        "X" : 5.6000000000000000E+002,
-        "Y" : 1.0000000000000000E+001
+        "X" : 5.4000000000000000E+002,
+        "Y" : 2.0000000000000000E+001
       },
       "Width" : 6.5000000000000000E+002
     },
@@ -105,6 +121,18 @@
         "Y" : 1.0000000000000000E+001
       },
       "Width" : 2.2000000000000000E+002
+    },
+    {
+      "$$ClassName" : "TCastleLabel",
+      "Name" : "Label1",
+      "Text" : [
+        "Label1"
+      ],
+      "TranslationPersistent" : {
+        "$$ClassName" : "TCastleVector2Persistent",
+        "X" : 9.5000000000000000E+002,
+        "Y" : 6.2000000000000000E+002
+      }
     }
   ]
 }
