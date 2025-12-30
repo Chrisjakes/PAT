@@ -17,8 +17,9 @@ type
       userName : String;
       password : string;
       streak : integer;
+      relapses : integer;
     public
-      constructor create (sDate : TDate; uName : string; pword : string);
+      constructor create (sDate : TDate; uName : string; pword : string; relapses : integer);
       procedure setStreak;
       procedure setUserName(inName : string);
       procedure setpassword(inPassword : string);
@@ -27,17 +28,19 @@ type
       function getUserName : string;
       function getPassword : string;
       function getStartDate : TDate;
+      function fileString : string;
   end;
 
 implementation
 
 { TUser }
 
-constructor TUser.create(sDate: TDate; uName: string; pword: string);
+constructor TUser.create(sDate: TDate; uName: string; pword: string; uRelapses : integer);
 begin
   StartDate := sDate;
   userName := uName;
   password := pWord;
+  relapses:= uRelapses;
 end;
 
 procedure TUser.setStreak;
@@ -45,19 +48,20 @@ begin
   streak := DaysBetween(Now, StartDate);
 end;
 
-procedure TUser.setUserName;
+procedure TUser.setUserName(inName: string);
 begin
-
+  userName:=inName;
 end;
 
-procedure TUser.setpassword;
+procedure TUser.setpassword(inPassword: string);
 begin
-
+  password:=inPassword;
 end;
 
 procedure TUser.relapse;
 begin
   streak := 0;
+  relapses:=relapses + 1;
 end;
 
 function TUser.getStreak: integer;
@@ -73,6 +77,23 @@ end;
 function TUser.getPassword: string;
 begin
   result := password;
+end;
+
+function TUser.getStartDate: TDate;
+begin
+  result := StartDate;
+end;
+
+function TUser.fileString: string;
+var
+  outputString : string;
+begin
+  outputString := '';
+  outputString := outputString + userName + #10#13;
+  outputString := outputString + password + #10#13;
+  outputString := outputString + DateToStr(StartDate) + #10#13;
+  outputString := outputString + inttostr(relapses);
+  result := outputString;
 end;
 
 end.

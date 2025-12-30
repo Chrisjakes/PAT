@@ -66,7 +66,7 @@
         <PackageName Value="castle_engine_base"/>
       </Item2>
     </RequiredPackages>
-    <Units Count="6">
+    <Units Count="7">
       <Unit0>
         <Filename Value="Ayumi_2_standalone.dpr"/>
         <IsPartOfProject Value="True"/>
@@ -82,6 +82,7 @@
       <Unit3>
         <Filename Value="code/gameviewfrmmain.pas"/>
         <IsPartOfProject Value="True"/>
+        <UnitName Value="GameViewfrmMain"/>
       </Unit3>
       <Unit4>
         <Filename Value="uclassuser.pas"/>
@@ -93,6 +94,11 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uClassUserManager"/>
       </Unit5>
+      <Unit6>
+        <Filename Value="uclassfox.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uClassFox"/>
+      </Unit6>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
