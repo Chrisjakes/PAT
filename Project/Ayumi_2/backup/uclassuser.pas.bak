@@ -25,7 +25,6 @@ type
       procedure setUserName(inName : string);
       procedure setpassword(inPassword : string);
       procedure relapse;
-      procedure setRelapses (inRelapse);
       procedure setRelapseStore(newRelapse);
       function getStreak : integer;
       function getUserName : string;
@@ -33,7 +32,6 @@ type
       function getStartDate : TDate;
       function fileString : string;
       function getRelapseStore : string;
-      function getRelapses : integer;
   end;
 
 implementation
@@ -70,15 +68,9 @@ begin
   relapses:=relapses + 1;
 end;
 
-procedure TUser.setRelapses(inRelapse);
-begin
-  relapses := inRelapses;
-end;
-
 procedure TUser.setRelapseStore(newRelapse);
 begin
   relapseStore:= relapseStore + newRelapse + #10#13;
-  relapses := relapses + 1;
 end;
 
 function TUser.getStreak: integer;
@@ -117,11 +109,6 @@ end;
 function TUser.getRelapseStore: string;
 begin
   result := relapseStore;
-end;
-
-function TUser.getRelapses: integer;
-begin
-
 end;
 
 end.
